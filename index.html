@@ -3,31 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShiftJudge - Ratioshift</title>
+    <title>ShiftJudge | Ratioshift</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <h2>ShiftJudge</h2>
-        <span>Ratioshift Org</span>
+    <nav class="navbar">
+        <div class="logo">Shift<span>Judge</span></div>
+        <a href="auth.html" class="nav-btn">Login</a>
     </nav>
 
-    <div class="container">
-        <div class="input-section card">
-            <input type="text" id="probNum" placeholder="প্রবলেম আইডি (উদাঃ 1001)">
-            <input type="text" id="originUrl" placeholder="বিইক্লাউড প্রবলেম লিঙ্ক">
-            <button onclick="saveProblem()">সেভ প্রবলেম</button>
+    <section class="hero">
+        <h1>Simplify Your <span>Coding</span> Journey</h1>
+        <p>বিইক্লাউড প্রবলেম সলভিং এখন হবে আরও সহজ, আরও ক্লিন। আপনার নিজস্ব পার্সোনাল জাজ প্ল্যাটফর্ম।</p>
+        <div class="hero-btns">
+            <button class="btn-primary" onclick="location.href='auth.html'">Get Started</button>
+            <button class="btn-outline">Learn More</button>
         </div>
-
-        <div class="editor-section card">
-            <textarea id="codeEditor" placeholder="// আপনার C কোড এখানে লিখুন..."></textarea>
-            <div class="actions">
-                <button class="copy-btn" onclick="copyCode()">কপি কোড</button>
-                <button class="submit-btn" onclick="openBeecrowd()">বিইক্লাউডে সাবমিট করুন</button>
-            </div>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
+    </section>
 </body>
 </html>
