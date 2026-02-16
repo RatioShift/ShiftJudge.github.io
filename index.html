@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShiftJudge - Ratioshift</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h2>ShiftJudge</h2>
+        <span>Ratioshift Org</span>
+    </nav>
+
+    <div class="container">
+        <div class="input-section card">
+            <input type="text" id="probNum" placeholder="প্রবলেম আইডি (উদাঃ 1001)">
+            <input type="text" id="originUrl" placeholder="বিইক্লাউড প্রবলেম লিঙ্ক">
+            <button onclick="saveProblem()">সেভ প্রবলেম</button>
+        </div>
+
+        <div class="editor-section card">
+            <textarea id="codeEditor" placeholder="// আপনার C কোড এখানে লিখুন..."></textarea>
+            <div class="actions">
+                <button class="copy-btn" onclick="copyCode()">কপি কোড</button>
+                <button class="submit-btn" onclick="openBeecrowd()">বিইক্লাউডে সাবমিট করুন</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
