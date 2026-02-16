@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor | ShiftJudge</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/editor.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="editor-container">
+        <header class="editor-header">
+            <a href="dashboard.html" class="back-link">← Dashboard</a>
+            <div class="header-actions">
+                <button class="btn-save" onclick="saveToDatabase()">Save Progress</button>
+                <button class="btn-submit" onclick="copyAndSubmit()">Copy & Submit</button>
+            </div>
+        </header>
+
+        <section class="problem-meta card">
+            <div class="input-row">
+                <input type="text" id="probTitle" placeholder="প্রবলেমের নাম (উদাঃ Extremely Basic)">
+                <input type="number" id="probId" placeholder="আইডি (1001)">
+            </div>
+            <input type="text" id="originUrl" placeholder="অরিজিনাল প্রবলেম লিঙ্ক (URL)">
+        </section>
+
+        <section class="code-workspace">
+            <div class="editor-label">
+                <span>C Language (GCC 9.2.0)</span>
+                <button onclick="clearEditor()">Clear</button>
+            </div>
+            <textarea id="mainEditor" spellcheck="false" placeholder="#include <stdio.h>&#10;&#10;int main() {&#10;    // Your code here&#10;    return 0;&#10;}"></textarea>
+        </section>
+    </div>
+
+    <script src="assets/js/editor.js"></script>
+</body>
+</html>

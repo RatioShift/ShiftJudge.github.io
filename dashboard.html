@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | ShiftJudge</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-wrapper">
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                Shift<span>Judge</span>
+            </div>
+            <nav class="side-nav">
+                <a href="#" class="active">🏠 Dashboard</a>
+                <a href="editor.html">➕ Add Problem</a>
+                <a href="#">📊 Statistics</a>
+                <a href="index.html">🚪 Logout</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="content-header">
+                <h2>Welcome Back, <span>User</span>!</h2>
+                <button class="add-new-btn" onclick="location.href='editor.html'">+ New Problem</button>
+            </header>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>12</h3>
+                    <p>Total Solved</p>
+                </div>
+                <div class="stat-card">
+                    <h3>5</h3>
+                    <p>Current Streak</p>
+                </div>
+            </div>
+
+            <section class="problem-list-section">
+                <div class="section-title">
+                    <h3>Recent Problems</h3>
+                    <input type="text" placeholder="Filter problems..." id="filterInput">
+                </div>
+                
+                <div class="problem-grid" id="problemGrid">
+                    <div class="prob-card">
+                        <div class="prob-info">
+                            <h4>Extremely Basic</h4>
+                            <span>ID: 1001 | Beecrowd</span>
+                        </div>
+                        <button class="solve-btn" onclick="location.href='editor.html'">Solve</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="assets/js/dashboard.js"></script>
+</body>
+</html>

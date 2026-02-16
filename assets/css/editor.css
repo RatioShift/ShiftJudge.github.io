@@ -1,0 +1,81 @@
+.editor-container {
+    background: #0f172a; /* ডার্ক থিম এডিটরের জন্য আরামদায়ক */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.editor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.back-link { color: #94a3b8; text-decoration: none; font-size: 0.9rem; }
+
+.btn-save { background: #334155; color: white; border: none; padding: 8px 15px; border-radius: 6px; margin-right: 5px; }
+.btn-submit { background: var(--primary); color: white; border: none; padding: 8px 15px; border-radius: 6px; font-weight: 600; }
+
+/* ইনপুট সেকশন */
+.problem-meta {
+    background: #1e293b;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.input-row { display: flex; gap: 10px; margin-bottom: 10px; }
+.input-row input:first-child { flex: 2; }
+.input-row input:last-child { flex: 1; }
+
+.problem-meta input {
+    background: #0f172a;
+    border: 1px solid #334155;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    width: 100%;
+}
+
+/* এডিটর এরিয়া */
+.code-workspace {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.editor-label {
+    display: flex;
+    justify-content: space-between;
+    color: #94a3b8;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    padding: 0 5px;
+}
+
+.editor-label button {
+    background: transparent;
+    border: none;
+    color: #ef4444;
+    cursor: pointer;
+}
+
+#mainEditor {
+    flex: 1;
+    width: 100%;
+    background: #1e293b;
+    color: #e2e8f0;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    padding: 15px;
+    font-family: 'Fira Code', monospace;
+    font-size: 1rem;
+    line-height: 1.5;
+    resize: none;
+    outline: none;
+}
+
+#mainEditor:focus { border-color: var(--primary); }
